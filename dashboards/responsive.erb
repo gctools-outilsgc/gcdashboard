@@ -1,0 +1,207 @@
+<style>
+#container {
+  padding: 0;
+}
+.competition h1 {
+  margin-bottom: 0;
+}
+.competition table {
+  width: auto;
+  margin: 0 auto;
+}
+.competition img {
+  max-width: 90px;
+  border-radius: 50%;
+  padding: 0 10px;
+}
+
+.grid-stack .grid-stack-item .grid-stack-item-content,
+.grid-stack .grid-stack-item .placeholder-content {
+  left: 5px;
+  right: 5px;
+}
+.grid-stack .grid-stack-item .grid-stack-item-content h1 {
+  position: relative;
+  top: 10%;
+}
+.grid-stack .grid-stack-item .grid-stack-item-content h2.value {
+  position: relative;
+  top: 18%;
+}
+.grid-stack .grid-stack-item .grid-stack-item-content h3.text {
+  position: relative;
+  top: 16%;
+}
+.grid-stack .grid-stack-item .grid-stack-item-content ol {
+  position: relative;
+  top: 15%;
+}
+
+.grid-stack .grid-stack-item .grid-stack-item-content.widget-comments h3 {
+  font-size: 22px;
+}
+.grid-stack .grid-stack-item .grid-stack-item-content.widget-comments .comment-container {
+  position: relative;
+  top: 15%;
+}
+
+.grid-stack .grid-stack-item .grid-stack-item-content.widget-meter h1 {
+  margin-bottom: 10%;
+}
+
+.grid-stack .grid-stack-item .grid-stack-item-content .more-info {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+}
+.grid-stack .grid-stack-item .grid-stack-item-content.widget-meter .more-info {
+  font-size: 150%;
+  color: #fff;
+}
+
+@media (max-width: 400px) {
+  .mobilenoshow {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .grid-stack .grid-stack-item .grid-stack-item-content ol li {
+    font-size: 80%;
+    margin-bottom: 2px;
+  }
+  .grid-stack .grid-stack-item .grid-stack-item-content h3.text {
+    position: relative;
+    top: 10%;
+  }
+}
+</style>
+
+<% content_for :title do %>GCTools Dashboard<% end %>
+<div class="grid-stack">
+  <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="3" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="visitor_count_real_time_gcconnex" data-view="Graph" data-title="Users Currently on GCconnex" data-title-fr="Utilisateurs actuellement dans GCconnex" data-moreinfo="" style="background-color: #047177"></div>
+  </div>
+
+  <div class="grid-stack-item" data-gs-x="3" data-gs-y="0" data-gs-width="2" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="visitor_count_gcconnex" data-view="Number" data-title="Visits Past 30 Days" data-title-fr="Visites des 30 derniers jours" data-moreinfo="GCconnex" style="background-color: #047177"></div>
+  </div>
+
+  <div class="grid-stack-item" data-gs-x="5" data-gs-y="0" data-gs-width="4" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="top_pages_gcconnex" data-view="List" data-title="Top Pages Last 24 Hours" data-title-fr="Pages les plus populaires des 24 dernières heures" data-moreinfo="GCconnex" style="background-color: #047177"></div>
+  </div>
+  
+  <div class="grid-stack-item mobilenoshow" data-gs-x="10" data-gs-y="0" data-gs-width="3" data-gs-height="3">
+      <div class="grid-stack-item-content" data-id="twitter_mentions_gctools" data-view="Comments" data-title="#GCTools Tweets" data-title-fr="#GCTools gazouille" style="background-color: #12b0c5"></div>
+  </div>
+
+
+
+  <div class="grid-stack-item" data-gs-x="0" data-gs-y="4" data-gs-width="3" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="visitor_count_real_time_gcpedia" data-view="Graph" data-title="Users Currently on GCpedia" data-title-fr="Utilisateurs actuellement dans GCcpedia" data-moreinfo="" style="background-color: #1c507f"></div>
+  </div>
+
+  <div class="grid-stack-item" data-gs-x="3" data-gs-y="4" data-gs-width="2" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="visitor_count_gcpedia" data-view="Number" data-title="Visits Past 30 Days" data-title-fr="Visites des 30 derniers jours" data-moreinfo="GCpedia" style="background-color: #1c507f"></div>
+  </div>
+
+  <div class="grid-stack-item" data-gs-x="5" data-gs-y="4" data-gs-width="4" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="top_pages_gcpedia" data-view="List" data-title="Top Pages Last 24 Hours" data-title-fr="Pages les plus populaires des 24 dernières heures" data-moreinfo="GCpedia" style="background-color: #1c507f"></div>
+  </div>
+  
+  <div class="grid-stack-item mobilenoshow" data-gs-x="10" data-gs-y="4" data-gs-width="3" data-gs-height="3">
+      <div class="grid-stack-item-content" data-id="twitter_mentions_gc2020" data-view="Comments" data-title="#GC2020 Tweets" data-title-fr="#GC2020 gazouille" style="background-color: #ec663c"></div>
+  </div>
+ 
+ 
+
+  <div class="grid-stack-item" data-gs-x="0" data-gs-y="8" data-gs-width="3" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="visitor_count_real_time_gccollab" data-view="Graph" data-title="Users Currently on GCcollab" data-title-fr="Utilisateurs actuellement dans GCcollab" data-moreinfo="" style="background-color: #46246a"></div>
+  </div>
+
+  <div class="grid-stack-item" data-gs-x="3" data-gs-y="8" data-gs-width="2" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="visitor_count_gccollab" data-view="Number" data-title="Visits Past 30 Days" data-title-fr="Visites des 30 derniers jours" data-moreinfo="GCcollab" style="background-color: #46246a"></div>
+  </div>
+  
+  <div class="grid-stack-item" data-gs-x="5" data-gs-y="8" data-gs-width="4" data-gs-height="3"> 
+    <div class="grid-stack-item-content" data-id="top_pages_gccollab" data-view="List" data-title="Top Pages Last 24 Hours" data-title-fr="Pages les plus populaires des 24 dernières heures" data-moreinfo="GCcollab" style="background-color: #46246a"></div>
+  </div>
+
+  <div class="grid-stack-item" data-gs-x="10" data-gs-y="8" data-gs-width="3" data-gs-height="3">
+    <div class="grid-stack-item-content" data-id="user_types_gccollab" data-view="Meter" data-title="GCcollab Users" data-title-fr="Utilisateurs dans GCcollab" data-moreinfo="" data-min="0" data-max="8000" style="background-color: #46246a"></div>
+  </div>
+
+
+
+  <div class="grid-stack-item" data-gs-x="0" data-gs-y="12" data-gs-width="3" data-gs-height="3"> 
+    <div class="grid-stack-item-content ui-draggable-handle widget widget-graph rickshaw_graph" data-title="Total Live Users" data-title-fr="Total des utilisateurs en direct" style="background-color: #71388a">
+      <h1 class="title" data-bind="data-title">Total Live Users</h1>
+      <h2 class="value" id="h2TotalLive">0</h2>
+      <p class="more-info">GCTools</p>
+    </div>
+  </div>
+  
+  <div class="grid-stack-item" data-gs-x="3" data-gs-y="12" data-gs-width="2" data-gs-height="3"> 
+    <div class="grid-stack-item-content ui-draggable-handle widget widget-number" data-title="Total Visits 30 Days" data-title-fr="Total des visites depuis les 30 derniers jours" style="background-color: #71388a">
+      <h1 class="title" data-bind="">Total Visits 30 Days</h1>
+      <h2 class="value" id="h2TotalVisits">0</h2>
+      <p class="more-info">GCTools</p>
+    </div>
+  </div>
+
+  <div class="grid-stack-item" data-gs-x="5" data-gs-y="12" data-gs-width="4" data-gs-height="3">
+    <div class="grid-stack-item-content" data-id="welcome" data-view="Text" data-title="Real-time data for the GCTools as it happens" data-title-fr="Données en temps réel pour les OutilsGC" data-text="Have any ideas for additional data displays?" data-text-fr="Avez-vous des idées d'affichage de données supplémentaires?" data-moreinfo="<a href='mailto:mark.wooff@tbs-sct.gc.ca'>mark.wooff@tbs-sct.gc.ca</a> -&- <a href='mailto:sean.kibbee@canada.ca'>sean.kibbee@canada.ca</a>" style="background-color: #71388a"></div>
+  </div>
+
+  <div class="grid-stack-item mobilenoshow" data-gs-x="9" data-gs-y="12" data-gs-width="3" data-gs-height="3">
+    <div class="grid-stack-item-content" data-id="qrcode" data-view="Image" data-title="QR Code" data-title-fr="QR Code" data-image="/qrcode.png" data-text="https://gccollab.ca/gcdashboard" style="background-color: #71388a"></div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+Lang = false;
+$(function() {
+  window.setInterval(function() {
+    TotalLive = parseInt($('[data-id="visitor_count_real_time_gccollab"]').find("h2").text());
+    TotalLive += parseInt($('[data-id="visitor_count_real_time_gcpedia"]').find("h2").text());
+    TotalLive += parseInt($('[data-id="visitor_count_real_time_gcconnex"]').find("h2").text());
+    $('#h2TotalLive').text(TotalLive);
+
+    TotalVisits = parseInt($('[data-id="visitor_count_gccollab"]').find("h2").text().replace("K","00").replace(".",""));
+    TotalVisits += parseInt($('[data-id="visitor_count_gcpedia"]').find("h2").text().replace("K","00").replace(".",""));
+    TotalVisits += parseInt($('[data-id="visitor_count_gcconnex"]').find("h2").text().replace("K","00").replace(".",""));
+    $('#h2TotalVisits').text(TotalVisits/1000 + 'K');
+  }, 500);
+
+  window.setInterval(DoLang, 30000);
+  DoLang();
+  
+  function DoLang(){
+    if(Lang){
+      title = "data-title";
+  		text = "data-text";
+    } else {
+      title = "data-title-fr";
+    	text = "data-text-fr";
+    }
+
+  	$( ".title" ).each(function( i, obj ) {
+  		if(typeof $(obj).attr("data-bind") != 'undefined'){
+  	  		if(typeof $(obj).parent().attr(title) != 'undefined'){
+  	  			$(obj).text($(obj).parent().attr(title));
+  	  		}
+  	  	}
+  	});
+
+    $( ".text" ).each(function( i, obj ) {
+      if(typeof $(obj).attr("data-bind") != 'undefined'){
+          if(typeof $(obj).parent().attr(text) != 'undefined'){
+            $(obj).html($(obj).parent().attr(text));
+          }
+        }
+    });
+  	
+    Lang = !Lang;
+  }
+});
+</script>
