@@ -11,7 +11,7 @@ GCconnexID = GA_CONNEX_ID
 GCpediaID = GA_PEDIA_ID
 
 visitorCountTime = '1h'
-visitorCountRealTime = '5s'
+visitorCountRealTime = '10s'
 pagesCountTime = '5m'
 
 $ElggFilters = GA_FILTERS
