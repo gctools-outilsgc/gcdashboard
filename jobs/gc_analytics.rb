@@ -92,11 +92,11 @@ SCHEDULER.every pagesCountTime, :first_in => 0 do
   })
 
   topPagesGCcollab = []
-  topPagesGCcollab << { 'label': response.data.rows[0][0].to_str.sub(' : GCcollab','') }
-  topPagesGCcollab << { 'label': response.data.rows[1][0].to_str.sub(' : GCcollab','') }
-  topPagesGCcollab << { 'label': response.data.rows[2][0].to_str.sub(' : GCcollab','') }
-  topPagesGCcollab << { 'label': response.data.rows[3][0].to_str.sub(' : GCcollab','') }
-  topPagesGCcollab << { 'label': response.data.rows[4][0].to_str.sub(' : GCcollab','') }
+  topPagesGCcollab << { 'label' => response.data.rows[0][0].to_str.sub(' : GCcollab','') }
+  topPagesGCcollab << { 'label' => response.data.rows[1][0].to_str.sub(' : GCcollab','') }
+  topPagesGCcollab << { 'label' => response.data.rows[2][0].to_str.sub(' : GCcollab','') }
+  topPagesGCcollab << { 'label' => response.data.rows[3][0].to_str.sub(' : GCcollab','') }
+  topPagesGCcollab << { 'label' => response.data.rows[4][0].to_str.sub(' : GCcollab','') }
 
   # Update the dashboard
   # Note the trailing to_i - See: https://github.com/Shopify/dashing/issues/33
@@ -191,11 +191,11 @@ SCHEDULER.every pagesCountTime, :first_in => 0 do
   })
 
   topPagesGCconnex = []
-  topPagesGCconnex << { 'label': response.data.rows[0][0].to_str.sub(' : GCconnex','')}
-  topPagesGCconnex << { 'label': response.data.rows[1][0].to_str.sub(' : GCconnex','')}
-  topPagesGCconnex << { 'label': response.data.rows[2][0].to_str.sub(' : GCconnex','')}
-  topPagesGCconnex << { 'label': response.data.rows[3][0].to_str.sub(' : GCconnex','')}
-  topPagesGCconnex << { 'label': response.data.rows[4][0].to_str.sub(' : GCconnex','')}
+  topPagesGCconnex << { 'label' => response.data.rows[0][0].to_str.sub(' : GCconnex','')}
+  topPagesGCconnex << { 'label' => response.data.rows[1][0].to_str.sub(' : GCconnex','')}
+  topPagesGCconnex << { 'label' => response.data.rows[2][0].to_str.sub(' : GCconnex','')}
+  topPagesGCconnex << { 'label' => response.data.rows[3][0].to_str.sub(' : GCconnex','')}
+  topPagesGCconnex << { 'label' => response.data.rows[4][0].to_str.sub(' : GCconnex','')}
 
   # Update the dashboard
   # Note the trailing to_i - See: https://github.com/Shopify/dashing/issues/33
@@ -288,11 +288,11 @@ SCHEDULER.every pagesCountTime, :first_in => 0 do
   })
 
   topPagesGCpedia = []
-  topPagesGCpedia << { 'label': response.data.rows[0][0].to_str.sub(' - GCpedia','')}
-  topPagesGCpedia << { 'label': response.data.rows[1][0].to_str.sub(' - GCpedia','')}
-  topPagesGCpedia << { 'label': response.data.rows[2][0].to_str.sub(' - GCpedia','')}
-  topPagesGCpedia << { 'label': response.data.rows[3][0].to_str.sub(' - GCpedia','')}
-  topPagesGCpedia << { 'label': response.data.rows[4][0].to_str.sub(' - GCpedia','')}
+  topPagesGCpedia << { 'label' => response.data.rows[0][0].to_str.sub(' - GCpedia','')}
+  topPagesGCpedia << { 'label' => response.data.rows[1][0].to_str.sub(' - GCpedia','')}
+  topPagesGCpedia << { 'label' => response.data.rows[2][0].to_str.sub(' - GCpedia','')}
+  topPagesGCpedia << { 'label' => response.data.rows[3][0].to_str.sub(' - GCpedia','')}
+  topPagesGCpedia << { 'label' => response.data.rows[4][0].to_str.sub(' - GCpedia','')}
 
   # Update the dashboard
   # Note the trailing to_i - See: https://github.com/Shopify/dashing/issues/33

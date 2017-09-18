@@ -1,6 +1,6 @@
 *DS_STORE
-/Gemfile.lock
 *.gem
+*.p12
 coverage/
 log/
 tmp/

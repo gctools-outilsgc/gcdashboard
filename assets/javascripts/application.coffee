@@ -5,7 +5,7 @@
 #= require_directory .
 #= require_tree ../../widgets
 
-Batman.config.viewPrefix = 'gcdashboard/views'
+Batman.config.viewPrefix = 'views'
 
 console.log("Yeah! The dashboard has started!")
 
