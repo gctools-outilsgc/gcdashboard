@@ -2,9 +2,12 @@ class Dashing.Meter extends Dashing.Widget
 
   @accessor 'value', Dashing.AnimatedValue
   @accessor 'name', Dashing.Text
+  @accessor 'max', Dashing.Text
 
   constructor: ->
     super
+    @observe 'max', (max) ->
+      $(@node).attr("data-max", max)
     @observe 'value', (value) ->
       $(@node).find(".meter").val(value).trigger('change')
     @observe 'name', (name) ->
