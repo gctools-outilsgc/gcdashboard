@@ -7,6 +7,21 @@
 /*jslint indent: 2, vars: true, plusplus: true */
 /*global setTimeout, clearTimeout */
 
+/**
+ * Hack in support for Function.name for browsers that don't support it.
+ * IE, I'm looking at you.
+**/
+if (Function.prototype.name === undefined && Object.defineProperty !== undefined) {
+    Object.defineProperty(Function.prototype, 'name', {
+        get: function() {
+            var funcNameRegex = /function\s([^(]{1,})\(/;
+            var results = (funcNameRegex).exec((this).toString());
+            return (results && results.length > 1) ? results[1].trim() : "";
+        },
+        set: function(value) {}
+    });
+}
+
 // console.log("Yaffle EventSource has been included the js asset");
 
 (function (global) {
